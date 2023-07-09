@@ -69,17 +69,49 @@
 // lastday(prompt("Enter ur age: "));
 
 
-function bmi (h,w) {
+// function bmi (h,w) {
 
-    return alert(Math.floor(w/(h*h)));
+//     return alert(Math.floor(w/(h*h)));
+
+// }
+
+// bmi(1.68,60);
+
+// prompt("Enter your name: ");
+// prompt("Enter your partner name: ");
+// alert("Your love is "+Math.round(Math.random()*100+1)+'%');
+
+
+
+
+
+function leapy(ab){
+
+
+
+if (ab%4===0){
+    if (ab%100===0) {
+        if(ab%400===0) {
+            document.write( "Leap year");
+        }
+        else {
+            document.write( "NOT A Leap year");
+        }
+        
+    }
+    else{
+        document.write( "Leap year");
+    }
+
+} else {
+    document.write( "NOT A Leap year");
+}
 
 }
 
-bmi(1.68,60);
+yea = Number(prompt('Enter number'))
 
-prompt("Enter your name: ");
-prompt("Enter your partner name: ");
-alert("Your love is "+Math.round(Math.random()*100+1)+'%');
+leapy(yea)
 
     </script>
 </body>
