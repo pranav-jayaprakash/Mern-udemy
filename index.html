@@ -129,36 +129,34 @@
 // }
 
 
-// var ab = [];
-// var count1 = 0;
+var ab = [];
+var count1 = 1;
 
-// function fizz() {
+function fizz() {
 
-//     if (count1%3===0) {
-//         if (count1%5===0){
-//             ab.push("FIZZBUZZ");
-//             count1++;
+    if (count1%3===0) {
+        if (count1%5===0){
+            ab.push("FIZZBUZZ");
 
-//             console.log(ab)
-//         } else {
-//             ab.push("FIZZ");
-//             count1++;
-//         }
-//     }
-//     else if (count1%5===0){
-//             ab.push("BUZZ");
-//             count1++;
+        } else {
+            ab.push("FIZZ");
 
-//             console.log(ab)
-//         }
-//     else {
-//     ab.push(count1);
-//     count1++;
+        }
+    }
+    else if (count1%5===0){
+            ab.push("BUZZ");
 
-//     console.log(ab)
-//     }
+        }
+    else {
+    ab.push(count1);
     
-// }
+    }
+
+
+    count1++;
+    console.log(ab)
+    
+}
 
 
 
